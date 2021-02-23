@@ -2,7 +2,8 @@ const mongoose = require("mongoose");
 
 const categorySchema = new mongoose.Schema(
   {
-    name: {
+    // material type --> Aluminium, Plastic, Steel
+    type: {
       type: String,
       trim: true,
       required: true,
