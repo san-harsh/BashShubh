@@ -1,0 +1,47 @@
+.MaterialType buttonGroup{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.imgNP{
+    position: relative;
+}
+
+.imgText{
+    position: absolute;
+    top :200px;
+    left:310px;
+    font-family:Impact,charcoal,sans-serif;
+    color:#758283;
+    font-size: large;
+    
+}
+
+.NP-Color {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.NP-Color img{
+    width:15%;
+    height: 15%;
+}
+/*
+        label { 
+            float: left; 
+        } 
+        
+        span { 
+            display: flex; 
+            overflow: hidden; 
+            padding: 0px 4px 0px 6px; 
+        } 
+        
+        input { 
+            width: 30%; 
+        } */
