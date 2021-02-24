@@ -40,9 +40,11 @@ export class App extends Component {
               <About />
             </Route>
             <Route path='/dashboard'>
+              <Navigation />
               <Dashboard />
             </Route>
             <Route path='/product'>
+              <Navigation />
               <Product />
             </Route>
             <Route path='/'>

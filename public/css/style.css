@@ -171,6 +171,15 @@ hr {
 	background-color: #6372ff;
 }
 /* login signup button */
+.btn-signout {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Courier New', Courier, monospace;
+	padding: 7px;
+	margin: 5px;
+	border-radius: 25px;
+	margin-right: 20px !important;
+}
 .btn-login {
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;

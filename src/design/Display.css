@@ -1,47 +1,53 @@
+body {
+    margin-top: 75px;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
 .MaterialType buttonGroup{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: space-between;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    text-align: center !important;
+    justify-content: space-between !important;
 }
 
 .imgNP{
-    position: relative;
+    position: relative !important;
 }
 
 .imgText{
-    position: absolute;
-    top :200px;
-    left:310px;
-    font-family:Impact,charcoal,sans-serif;
-    color:#758283;
-    font-size: large;
+    position: absolute !important;
+    top :200px !important;
+    left:310px !important;
+    font-family:Impact,charcoal,sans-serif !important;
+    color:#758283 !important;
+    font-size: large !important;
     
 }
 
 .NP-Color {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap !important;
 }
 
 .NP-Color img{
-    width:15%;
-    height: 15%;
+    width:15% !important;
+    height: 15% !important;
 }
 /*
         label { 
-            float: left; 
+            float: left !important; 
         } 
         
         span { 
-            display: flex; 
-            overflow: hidden; 
-            padding: 0px 4px 0px 6px; 
+            display: flex !important; 
+            overflow: hidden !important; 
+            padding: 0px 4px 0px 6px !important; 
         } 
         
         input { 
-            width: 30%; 
+            width: 30% !important; 
         } */

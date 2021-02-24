@@ -49,6 +49,14 @@ export class Navigation extends Component {
                   Contact
                 </a>
               </li>
+              <li>
+                <a href='/dashboard' className='page-scroll'>
+                  Dashboard
+                </a>
+              </li>
+              <li>
+                <button className='btn btn-warning btn-signout'>LOGOUT</button>
+              </li>
             </ul>
           </div>
         </div>

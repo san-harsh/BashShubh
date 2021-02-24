@@ -1,61 +1,56 @@
-import React,{Component} from 'react';
+/** @format */
+
+import React, { Component } from 'react'
 import Display from '../design/Display'
 import Setting from '../design/Setting'
 
+class Product extends Component {
+  state = {
+    NPColor: 'black',
+    NPText: '',
+    NPTextSize: 40,
+    NPTextColor: '#758283',
+  }
 
-class Product extends Component{
- 
-    state = {
-      NPColor : 'black',
-      NPText : '',
-      NPTextSize : 40,
-      NPTextColor :'#758283'
-    }
+  handleColorChange = (e) => {
+    this.setState({ NPColor: e.target.id })
+  }
 
-    handleColorChange =(e)=>{
-     this.setState({NPColor: e.target.id})
-    }
-    
-    handleOnChange =(e)=>{
-      this.setState({NPText : e.target.value})
-    }
+  handleOnChange = (e) => {
+    this.setState({ NPText: e.target.value })
+  }
 
-    handleTextSize=(e)=>{
-      this.setState({NPTextSize : e.target.value})
-    }
+  handleTextSize = (e) => {
+    this.setState({ NPTextSize: e.target.value })
+  }
 
-    handleTextColor =(e)=>{
-      this.setState({NPTextColor : e.target.value})
-    }
+  handleTextColor = (e) => {
+    this.setState({ NPTextColor: e.target.value })
+  }
 
-    formatText(){
-      const size = this.state.NPTextSize;
-      return parseInt(size);
-    }
+  formatText() {
+    const size = this.state.NPTextSize
+    return parseInt(size)
+  }
 
-  render(){
-    return(
-         <div className="container py-5">
-           <div className ="row">
-             <div className="col-lg-8">
-             <Display 
-             display ={this.state}
-             textFormat={this.formatText()}/>
-             </div>
+  render() {
+    return (
+      <div className='container py-5' style={{maxWidth:'100%', maxHeight:'100%'}}>
+        <div className='row'>
+          <div className='col-lg-8' style={{ float: 'left' }}>
+            <Display display={this.state} textFormat={this.formatText()} />
+          </div>
 
-             <div className="col-lg-4">
-             <Setting 
-               color ={this.handleColorChange}
-               text = {this.handleOnChange}
-               textSize ={this.handleTextSize}
-               textColor ={this.handleTextColor}
+          <div className='col-lg-4' style={{ float: 'right' }}>
+            <Setting
+              color={this.handleColorChange}
+              text={this.handleOnChange}
+              textSize={this.handleTextSize}
+              textColor={this.handleTextColor}
             />
-             </div>
-           </div>
-          
-        
-         </div>
-
+          </div>
+        </div>
+      </div>
     )
   }
 }
